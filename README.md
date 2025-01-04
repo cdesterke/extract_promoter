@@ -1,7 +1,7 @@
 # extract_promoter
 A perl script to extract a bed of regulatory regions for a gene list with Gencode GTF as input
 
-### download human gtf in human folder
+### download human gtf in human folder (need 1.7 GB of space)
 ```
 ## permission execution
 chmod +x download_human_gencode.sh
@@ -11,7 +11,7 @@ chmod +x download_human_gencode.sh
 ## create "human" folder containing "latest_gencode.gtf" file
 ```
 
-### download human gtf in mouse folder
+### download human gtf in mouse folder (need 1 GB of space)
 ```
 ## permission execution
 chmod +x download_mouse_gencode.sh
