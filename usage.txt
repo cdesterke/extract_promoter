@@ -1,0 +1,19 @@
+## droit
+chmod +x extract_promoter.pl
+
+## execution for usage
+./extract_promoter.pl
+
+## usage
+./extract_promoter.pl --gtf gencode.v47.annotation.gtf --genes gene_list.txt --output promoters.bed --upstream 1000 --downstream 100
+
+
+## homer 
+annotatePeaks.pl promoters.bed hg38 -noann > annotated_peaks.txt
+
+
+## homer with GTF
+annotatePeaks.pl promoters.bed hg38 -gtf gencode.v47.annotation.gtf -noann  > annotated_peaks.txt 
+
+## find motifs
+findMotifsGenome.pl promoters.bed hg38 output_dir -mask
